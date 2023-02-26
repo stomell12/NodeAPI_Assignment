@@ -11,5 +11,5 @@ exports.weather_forecast = function (req, res) {
       PrecipitationChance: 0,
     },
   ];
-  res.render('weather', { forecast: JSON.stringify(forecast, null, 2) });
+  res.render('weather', { forecast });
 };
